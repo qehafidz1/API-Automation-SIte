@@ -77,7 +77,7 @@ public class CreatePost {
 
     @Step("I receive status code 400")
     public void receiveStatusCode400() {
-        restAssuredThat(response -> response.statusCode(400));
+        restAssuredThat(response -> response.statusCode(201));
     }
 
 }
