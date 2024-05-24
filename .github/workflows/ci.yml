@@ -26,5 +26,6 @@ jobs:
      needs: build
      runs-on: ubuntu-latest
      steps:
-       - name : Test API
+       - uses: actions/checkout@v2
+       - name: Test API
          run: mvn clean verify
